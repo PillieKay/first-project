@@ -1,0 +1,398 @@
+.page {
+  min-width: 1100px;
+  /* we don't know how to make mobile versions of websites yet, */
+  /* so here we've set a minimum page width */
+  max-width: 1600px;
+  /* here we've set a maximum page width */
+  margin: 0 auto;
+  /* this ensures that all content is centered on screens wider than 1600px */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header{
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* parameters for the header section */
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
+  background-size: cover;
+  margin-bottom: 100px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.header__logo {
+  position: absolute;
+  width: 154px;
+  height: 31px;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  align-self: center;
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.header__subtitle {
+  width: 388px;
+  left: 64px;
+  position: absolute;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.header__link {
+  text-decoration: none;
+  color: blue;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+/* here we have two examples of selectors in order to remind you how to set styles for elements */
+.header__square-pic {
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  margin-top: 64px;
+  right: 0px;
+  position: absolute;
+}
+
+.main-description{
+  width: 80%;
+  margin-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__main-text{
+  width: 80px;
+  min-width: 784px;
+}
+
+.two-columns__brief{
+  width: 175px;
+  margin-top: 0px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.two-columns{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.digits{
+  margin-top: 100px;
+}
+
+.digits__title{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.digits__subtitle{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.table__cell{
+  width: 250px;
+  list-style: none;
+}
+
+.table__heading{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.table__text{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.table__extract{
+  margin-top: 20px;
+}
+
+.feynman{
+  margin-top: 100px;
+  height: 790px;
+  position: relative;
+  background-color: #f2f2f2;
+  background-size: cover;
+  z-index: -2;
+}
+
+.feynman__background-image {
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.feynman__title{
+  width: 775px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.feynman__link {
+  top: 50%;
+  right: 48px;
+  position: absolute;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: black;
+}
+
+.kaufman{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  height: 790px;
+  position: relative;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  background-size: cover;
+  z-index: 1;
+}
+
+.kaufman__title_theme_dark {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 90px;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.kaufman__subtitle_theme_dark {
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.kaufman__triangle{
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+
+}
+
+.table__theme_dark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+/* including elements with key-value modifiers */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  list-style: none;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  color: white;
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.footer{
+  position: relative;
+  display: flex;
+  background-color: #1f1f1f;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: 350px;
+  color: white;
+}
+
+.logo_place_footer{
+  background-size: contain;
+  width: 183px;
+  height: 35px;
+}
+
+.footer__columns{
+  display: flex;
+  width: 90%;
+  min-height: 350px;
+  justify-content: space-between;
+}
+
+.footer_column{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.footer__column_content_copyright{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-basis: 711px;
+}
+
+.footer__author{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_info{
+  justify-content: space-between;
+  position: relative;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column-heading{
+  text-decoration: none;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer__column-links{
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  color: #f2f2f2;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: auto;
+}
+
+.footer__column_content_social{
+  position: relative;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer__social-icon{
+  position: relative;
+  justify-content: space-between;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  margin-right: 10px;
+  top: 2px;
+  padding: 0;
+}
